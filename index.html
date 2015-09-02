@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html ng-app="pr0t0" class=no-js>
+<head>
+	<meta charset=utf-8>
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <title>Pr0t0</title>
+    <meta name=description content="">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/lib/titip/dist/css/titip.css">
+    <link rel="stylesheet" type="text/css" href="assets/lib/angular-material/angular-material.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body ng-controller=mainController class=main layout=row layout-wrap>
+	<md-fab-toolbar flex=100 md-open="false" count="0" ng-class="md-right">
+		<md-fab-trigger class="align-with-text">
+		  <md-button aria-label="menu" class="md-fab md-primary">
+		    <md-icon md-svg-src="img/icons/menu.svg"></md-icon>
+		  </md-button>
+		</md-fab-trigger>
+		<md-toolbar>
+		  <md-fab-actions class="md-toolbar-tools">
+		    <md-button aria-label="comment" class="md-icon-button">
+		      <md-icon md-svg-src="img/icons/ic_comment_24px.svg"></md-icon>
+		    </md-button>
+		    <md-button aria-label="label" class="md-icon-button">
+		      <md-icon md-svg-src="img/icons/ic_label_24px.svg"></md-icon>
+		    </md-button>
+		    <md-button aria-label="photo" class="md-icon-button">
+		      <md-icon md-svg-src="img/icons/ic_photo_24px.svg"></md-icon>
+		    </md-button>
+		  </md-fab-actions>
+		</md-toolbar>
+	</md-fab-toolbar>
+	<div flex="20">
+		<md-toolbar class="md-warn">
+		    <div class="md-toolbar-tools">
+		      <h2 class="md-flex">Atoms</h2>
+		    </div>
+		  </md-toolbar>
+		  <md-content layout-padding style="padding: 24px;">
+		  	<ul>
+		  		<li ng-repeat="cmp in atoms">
+		  			<md-icon md-font-icon="{{ font.name }}"
+            ng-style="{color: !font.theme && font.color, 'font-size': it.size + 'px', height: it.size + 'px'}"
+            ng-class="font.theme"
+            aria-label="{{ font.name + it.size }}"
+            class="step "></md-icon>
+		  		</li>
+		  	</ul>
+		  </md-content>
+		  <md-toolbar class="md-warn">
+		    <div class="md-toolbar-tools">
+		      <h2 class="md-flex">Molecules</h2>
+		    </div>
+		  </md-toolbar>
+		  <md-content layout-padding style="padding: 24px;">
+		  	<ul>
+		  		<li ng-repeat="cmp in molecules">
+		  			<md-icon md-font-icon="{{ font.name }}"
+            ng-style="{color: !font.theme && font.color, 'font-size': it.size + 'px', height: it.size + 'px'}"
+            ng-class="font.theme"
+            aria-label="{{ font.name + it.size }}"
+            class="step "></md-icon>
+		  		</li>
+		  	</ul>
+		  </md-content>
+		  <md-toolbar class="md-warn">
+		    <div class="md-toolbar-tools">
+		      <h2 class="md-flex">Organisms</h2>
+		    </div>
+		  </md-toolbar>
+		  <md-content layout-padding style="padding: 24px;">
+		  	<ul>
+		  		<li ng-repeat="cmp in organisms">
+		  			<md-icon md-font-icon="{{ font.name }}"
+            ng-style="{color: !font.theme && font.color, 'font-size': it.size + 'px', height: it.size + 'px'}"
+            ng-class="font.theme"
+            aria-label="{{ font.name + it.size }}"
+            class="step "></md-icon>
+		  		</li>
+		  	</ul>
+		  </md-content>
+		  <md-toolbar class="md-warn">
+		    <div class="md-toolbar-tools">
+		      <h2 class="md-flex">Templates</h2>
+		    </div>
+		  </md-toolbar>
+		  <md-content layout-padding style="padding: 24px;">
+		  	<ul>
+		  		<li ng-repeat="cmp in templates">
+		  			<md-icon md-font-icon="{{ font.name }}"
+            ng-style="{color: !font.theme && font.color, 'font-size': it.size + 'px', height: it.size + 'px'}"
+            ng-class="font.theme"
+            aria-label="{{ font.name + it.size }}"
+            class="step "></md-icon>
+		  		</li>
+		  	</ul>
+		  </md-content>
+	</div>
+	<div flex="80" pr0t0-editor=mail ng-model=htmlContent layout=column></div>
+	<script src="assets/lib/i18next/i18next.js"></script>
+	<script src="assets/lib/angular/angular.js"></script>
+	<script src="assets/lib/angular-animate/angular-animate.js"></script>
+	<script src="assets/lib/angular-aria/angular-aria.js"></script>
+	<script src="assets/lib/angular-material/angular-material.js"></script>
+	<script src="assets/lib/ng-i18next/dist/ng-i18next.js"></script>
+	<script src="core/pr0t0.js"></script>
+	<script src="core/pr0t0Sanitize.js"></script>
+	<script src="services/components.js"></script>
+	<script src="services/uuid.js"></script>
+    <script src="services/dnd.js"></script>
+    <script src="services/draggable.js"></script>
+    <script src="services/logicalInheritance.js"></script>
+    <script src="services/pr0t0Sanitize.js"></script>
+    <script src="services/toolbars.js"></script>
+    <script src="controllers/mainCtrl.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

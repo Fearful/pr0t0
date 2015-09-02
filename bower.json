@@ -1,0 +1,26 @@
+{
+  "name": "pr0t0",
+  "description": "Prototype Tool",
+  "version": "0.0.1",
+  "homepage": "https://github.com/Fearful/pr0t0",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "1.2.x",
+    "angular-route": "1.2.x",
+    "angular-loader": "1.2.x",
+    "angular-mocks": "~1.2.x",
+    "angular-history": "~0.7.5",
+    "angular-animate": "~1.2.x",
+    "ng-i18next": "~0.3.3",
+    "html2canvas": "~0.4.1",
+    "css-element-queries": "~0.0.2",
+    "ng-scrollbar": "~0.0.7",
+    "rangy": "1.3.0",
+    "underscore": "~1.8.2",
+    "dropzone": "~4.0.1",
+    "titip": "*",
+    "angular-progress-arc": "~1.0.0",
+    "ng-sortable": "~1.2.2"
+  }
+}

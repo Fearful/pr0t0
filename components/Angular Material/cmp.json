@@ -1,0 +1,24 @@
+{
+  "name": "Default",
+  "version": "0.0.1",
+  "description": "Default components for Workend Pr0t0",
+  "author": "Fearful <joan.lascano@gmail.com>",
+  "overrideOrder": [
+    "Atoms",
+    "Molecules",
+    "Organisms"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Fearful/Workend-pr0t0-default.git"
+  },
+  "languages": {
+    "en": "/languages/en/",
+    "es": "/languages/es/"
+  },
+  "dependencies": {
+    "angular": "1.4.2",
+    "angular-material": "10.1",
+    "angular-aria": "^1.3.15 || >1.4.0-beta.0"
+  }
+}

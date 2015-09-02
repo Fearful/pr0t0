@@ -1,0 +1,12 @@
+{
+  "name": "pr0t0",
+  "version": "0.0.1",
+  "description": "Prototype tool",
+  "main": "server.js",
+  "author": "Fearful <joan.lascano@gmail.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Fearful/pr0t0.git"
+  }
+}
